@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FiveM Loading Screen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video id="background-video" autoplay loop muted>
+    <source src="assets/video.mp4" type="video/mp4">
+  </video>
+
+  <audio id="background-audio" src="assets/audio.mp3" loop></audio>
+
+  <div id="gallery-box" class="content-box">
+    <div class="header">
+      <h2>Server Gallery</h2>
+      <button id="toggle-gallery-button" class="toggle-button">&gt;</button>
+    </div>
+    <p class="description">Lorem ipsum</p>
+    <div class="scroll-container" id="gallery">
+      <img class="content-image" src="assets/images/gallery1.png" alt="Gallery 1">
+      <img class="content-image" src="assets/images/gallery2.png" alt="Gallery 2">
+      <img class="content-image" src="assets/images/gallery3.png" alt="Gallery 3">
+      <img class="content-image" src="assets/images/gallery4.png" alt="Gallery 4">
+    </div>
+  </div>
+
+  <h1>Welcome to <span class="highlight">Fr Studios Roleplay</span></h1>
+
+  <div id="social-box" class="content-box">
+    <div class="header">
+      <h2>Social Media</h2>
+      <button id="toggle-social-button" class="toggle-button">&gt;</button>
+    </div>
+    <p class="description">Lorem ipsum</p>
+    <div class="scroll-container" id="social">
+      <img class="content-image" src="assets/images/youtube.png" alt="youtube" data-title="frstudios" data-name="youtube">
+      <img class="content-image" src="assets/images/discord.png" alt="discord" data-title="frstudios" data-name="discord">
+      <img class="content-image" src="assets/images/instagram.png" alt="instagram" data-title="frstudios" data-name="instagram">
+    </div>
+  </div>
+
+  <div id="team-box" class="content-box">
+    <div class="text-left">
+      <h2 class="team-header">Team</h2>
+    </div>
+    <p class="description"></p>
+    <div class="scroll-container" id="social">
+      <img class="content-image" src="assets/png1.png" alt="youtube" data-title="Developer" data-name="HAYDO">
+      <img class="content-image" src="assets/png2.png" alt="discord" data-title="Owner" data-name="EMIR">
+      <img class="content-image" src="assets/png3.png" alt="instagram" data-title="Designer" data-name="LUENAXD">
+    </div>
+    <div class="button-container">
+      <button id="toggle-team-button" class="team-button">&gt;</button>
+    </div>
+  </div>
+
+  <div id="updates-box" class="content-box">
+    <div class="text-left">
+      <h2 class="updates-header">Updates</h2>
+    </div>
+    <p class="description"></p>
+    <div class="rules-list">
+      <ul>
+        <li>Update 1: New features coming soon!</li>
+        <li>Update 2: Server maintenance.</li>
+        <li>Update 3: Bug fixed</li>
+        <li>Update 4: New events will be announced shortly.</li>
+      </ul>
+    </div>
+    <div class="button-container">
+      <button id="toggle-updates-button" class="team-button">&gt;</button>
+    </div>
+  </div>
+
+  <div id="rules-box" class="content-box">
+    <div class="text-left">
+      <h2 class="rules-header">RULES</h2>
+    </div>
+    <p class="description"></p>
+    <div class="rules-list">
+      <ul>
+        <li>Rule 1: No spamming</li>
+        <li>Rule 2: Respect others</li>
+        <li>Rule 3: No hate speech</li>
+        <li>Rule 4: Follow the guidelines</li>
+      </ul>
+    </div>
+    <div class="button-container">
+      <button id="toggle-rules-button" class="team-button">&gt;</button>
+    </div>
+  </div>
+
+  <div id="minigames-box" class="content-box">
+    <div class="header">
+      <h2>MiniGames</h2>
+      <button id="toggle-minigames-button" class="toggle-button">&gt;</button>
+    </div>
+    <div class="scroll-container" id="minigames">
+      <img class="content-image" src="assets/minigames/1.png" alt="Minigame 1">
+      <img class="content-image" src="assets/minigames/2.png" alt="Minigame 2">
+      <img class="content-image" src="assets/minigames/3.png" alt="Minigame 3">
+      <img class="content-image" src="assets/minigames/4.png" alt="Minigame 4">
+    </div>
+  </div>
+
+  <div id="image-modal">
+    <img id="modal-image" src="" alt="Fullscreen Image">
+    <button class="close-button" id="close-modal">×</button>
+  </div>
+
+  <div id="game-container">
+    <div class="header">
+      <h2>Mini Game</h2>
+      <button class="close-button" id="close-game">×</button>
+    </div>
+    <iframe id="game-iframe" src="" frameborder="0"></iframe>
+  </div>
+
+  <span class="mute">Press <p>SPACE</p> to mute / unmute</span>
+
+  <script src="script.js"></script>
+</body>
+</html>
